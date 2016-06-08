@@ -23,7 +23,6 @@ def canvas():
 	download(download_url[0])
 
 def download(url):
-	url = url + "?access_token=" + access_token
 	print(url)
 	wget.download(url)
 canvas()
