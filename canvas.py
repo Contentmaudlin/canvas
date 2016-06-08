@@ -1,6 +1,6 @@
 import requests, json, pprint, wget
 access_token = "1396~lVocfzFT3YufgeS0MDaMsTAUZFxwovLZTQRHbSJmXUwzDDLNDBBH4rwbZ2d1Zqrm"
-def canvas():
+def canvas():   
 	url = "https://canvas.instructure.com/api/v1/courses?access_token=" + access_token
 	response = requests.get(url)
 	json_courses = response.json() #need to check status code later here.
